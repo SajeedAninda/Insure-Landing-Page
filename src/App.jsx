@@ -1,5 +1,6 @@
 import Different from "./Components/Different"
 import FindOut from "./Components/FindOut"
+import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 
@@ -11,6 +12,7 @@ function App() {
     <Hero></Hero>
     <Different></Different>
     <FindOut></FindOut>
+    <Footer></Footer>
     </>
   )
 }

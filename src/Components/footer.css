@@ -1,0 +1,7 @@
+.footer {
+    background-image: url('../assets/bg-pattern-footer-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #fafafa;
+}
