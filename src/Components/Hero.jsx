@@ -31,7 +31,8 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='bg-white h-[60vh]'></div>
+            <div className='bg-white h-[60vh]'>
+            </div>
 
             <div className='absolute right-0 -top-[10%]'>
                 <img src={rightPattern} alt="Right Pattern" />
@@ -41,6 +42,9 @@ const Hero = () => {
                 <img src={leftPattern} alt="Left Pattern" className='w-full' />
             </div>
 
+            <div className='w-[85%] mx-auto'>
+                <hr className='w-[15%] border border-[#2d2640]' />
+            </div>
         </div>
     );
 };
