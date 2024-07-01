@@ -3,4 +3,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-}
+  }
+  
+  @media (max-width: 1024px) { /* Tablet and mobile screens */
+    .find-out-background {
+      background-image: url('../assets/bg-pattern-how-we-work-mobile.svg');
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  }
+  
