@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../assets/logo.svg"
 import hamburgerIcon from "../assets/icon-hamburger.svg";
+import closeIcon from "../assets/icon-close.svg"
 
 const Navbar = () => {
+    let [open, setOpen] = useState(false);
+
+    let handleNavMenu = () => {
+        setOpen(!open);
+    }
+
     return (
         <div className='bg-white h-[13vh] w-full flex items-center z-50 overflow-hidden'>
             <div className='w-[85%] mx-auto flex justify-between items-center'>
@@ -23,9 +30,24 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className='lg:hidden'>
-                    <img src={hamburgerIcon} alt="" />
-                </div>
+                {
+                    open &&
+
+                    <div onClick={handleNavMenu} className='lg:hidden'>
+                        <img src={closeIcon} alt="" />
+                    </div>
+                }
+
+                {
+                    !open &&
+                    <div onClick={handleNavMenu} className='lg:hidden'>
+                        <img src={hamburgerIcon} alt="" />
+                    </div>
+                }
+
+
+
+
             </div>
         </div>
     );
