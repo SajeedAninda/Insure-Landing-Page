@@ -6,12 +6,12 @@ import leftPattern from "../assets/bg-pattern-intro-left-desktop.svg";
 const Hero = () => {
     return (
         <div className='relative overflow-hidden'>
-            <div className='h-[87vh] flex items-center bg-[#2d2640]'>
-                <div className='w-[85%] mx-auto flex justify-between relative'>
-                    <div className='textDiv w-[50%]'>
-                        <hr className='w-[30%] mb-10' />
+            <div className='h-fit lg:h-[87vh] flex items-center bg-[#2d2640] pb-6 lg:pb-0'>
+                <div className='w-full lg:w-[85%] mx-auto flex gap-6 lg:gap-0 flex-col-reverse lg:flex-row justify-between relative'>
+                    <div className='textDiv w-[80%] text-center lg:text-left mx-auto lg:mx-0 lg:w-[50%]'>
+                        <hr className='w-[30%] mb-10 hidden lg:block' />
 
-                        <h1 className='font-dmSerif text-[70px] text-white leading-[70px]'>
+                        <h1 className='font-dmSerif text-[55px] lg:text-[70px] text-white leading-[70px]'>
                             Humanizing <br />
                             your insurance.
                         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    <div className='absolute right-0 top-0 overflow-hidden w-[50%]'>
+                    <div className='imgDiv lg:absolute right-0 top-0 overflow-hidden w-full lg:w-[50%]'>
                         <img src={heroImg} alt="Hero" className='w-full' />
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className='bg-white h-[60vh]'>
             </div>
 
-            <div className='absolute right-0 -top-[10%]'>
+            <div className='hidden lg:block absolute right-0 -top-[10%]'>
                 <img src={rightPattern} alt="Right Pattern" />
             </div>
 
