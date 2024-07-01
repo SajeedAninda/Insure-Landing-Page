@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='footer h-fit'>
             <div className='w-[85%] mx-auto py-16'>
-                <div className='flex items-center justify-between py-8 border-b border-gray-400'>
+                <div className='flex gap-6 lg:gap-0 flex-col lg:flex-row items-center justify-between py-8 border-b border-gray-400'>
                     <div>
                         <img src={logo} alt="Logo" />
                     </div>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='mt-8 grid grid-cols-4 gap-6'>
+                <div className='mt-8 grid grid-cols-1 md:grid-cols-2 text-center lg:text-left lg:grid-cols-4 gap-6'>
                     <div>
                         <p className='text-[#837d87] font-karla text-[15px] pb-8 font-semibold uppercase'>Our Company</p>
 
