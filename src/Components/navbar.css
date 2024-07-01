@@ -1,0 +1,6 @@
+.menuDiv {
+    background-image: url('../assets/bg-pattern-mobile-nav.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
